@@ -4,8 +4,8 @@
   "description": "web socket chat application",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "debugg": "nodemon --inspect server.js"
+    "dev": "nodemon index.js",
+    "debugg": "nodemon --inspect index.js"
   },
   "author": "kaxp",
   "license": "ISC",
