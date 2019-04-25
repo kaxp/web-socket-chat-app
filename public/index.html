@@ -27,7 +27,7 @@
 
         var name = prompt('What is your name? ');
 
-        var sock = new WebSocket("ws://localhost:5505");
+        var sock = new WebSocket("ws://ws-chat-application.herokuapp.com/");
     
         sock.onopen = function(){
             sock.send(JSON.stringify({
