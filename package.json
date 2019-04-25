@@ -1,0 +1,17 @@
+{
+  "name": "wsserver",
+  "version": "1.0.0",
+  "description": "web socket chat application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "debugg": "nodemon --inspect server.js"
+  },
+  "author": "kaxp",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11",
+    "ws": "^6.2.1"
+  }
+}
