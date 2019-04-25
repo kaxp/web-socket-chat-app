@@ -2,6 +2,7 @@
 var ws = require('ws').Server;
 const http = require('http')
 const exp = require('express')
+var path = require('path');
 
 const app = exp()
 
@@ -10,7 +11,9 @@ app.use(exp.static('public'))
 
 
 app.get('/home', (req,res)=>{
-  res.json({home : 'home'})
+
+    res.sendFile(path.join(__dirname + '/public/index.html'));
+  //res.json({home : 'home'})
 })
 
 
