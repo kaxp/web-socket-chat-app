@@ -6,7 +6,7 @@ const exp = require('express')
 const app = exp()
 
 
-app.use(express.static('public'))
+app.use(exp.static('public'))
 
 
 app.get('/home', (req,res)=>{
